@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <style>
+        .x 
+        {
+            height: 100px;
+            width: 100px;
+            background: gray;
+            border-radius: 10px;
+        }
+        .y 
+        {
+            background: green;
+            border-radius: 0 0 0 50px; /*bottom-left is set to 50px */
+        }
+
+        .z 
+        {
+            background: red;
+            border-radius: 100px 0; /*100px- top-left and bottom-right and 0px- top-right and bottom-left*/
+        }
+
+        .a
+        {
+            background: blue;
+            border-radius: 0px 100px;
+        }
+
+        .b
+        {
+            background: coral;
+            border-radius: 50px;
+        }
+
+        .p
+        {
+            background: darkgoldenrod;
+            border-radius: 50px;
+            width: 100px;
+        }
+
+        .q
+        {
+            background: darkcyan;
+            border-radius: 50%;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="x p"></h1>
+    <h1 class="x q"></h1>
+    <h1 class="x"></h1>
+    <h1 class="x y"></h1>
+    <h1 class="x z"></h1>
+    <h1 class="x a"></h1>
+    <h1 class="x b"></h1>
+</body>
+</html>
