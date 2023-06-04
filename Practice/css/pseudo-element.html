@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo Element</title>
+        <style>
+            h1::first-letter
+            {
+                background: lightblue;
+            }
+            p::first-line
+            {
+                background-color: green;
+                /* text-decoration:line-through; */
+            }
+            ::selection
+            {
+                background: dodgerblue;
+                color: white;
+            }
+            h2::before
+            {
+                content: "Hello ";
+            }
+            h1::after
+            {
+                content: " Manthan";
+            }
+            h3::after
+            {
+                content: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+            }
+            h3::before
+            {
+                content: "\2618";
+            }
+        </style>
+    </head>
+    <body>
+        <h3>te&nbsp</h3>
+        <h2>Manthan</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            assumenda tenetur modi pariatur cupiditate odio sit. Sint laudantium
+            adipisci hic cum assumenda possimus culpa accusamus, eaque tempora
+            modi reprehenderit magni?
+        </p>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+    </body>
+</html>

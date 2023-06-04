@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo Class</title>
+        <style>
+            p:first-child
+            {
+                background: grey;
+            }
+            p:nth-child(3)
+            {
+                background: white;
+            }
+            p:nth-child(3)
+            {
+                background: green;
+            }
+            p:last-child
+            {
+                background: dodgerblue;
+            }
+            .x:first-child
+            {
+                background: greenyellow;
+            }
+            a{
+                color: red;
+            }
+            a:visited
+            {
+                color: aqua;
+            }
+            .hoc:visited
+            {
+                color: brown;
+            }
+            a:hover{
+                color: dodgerblue;
+                font-size: 35px;
+                font-family: Candara;
+                font-weight: bold;
+                font-style:italic ;
+                text-decoration: none;
+            }
+            input
+            {
+                background: lightseagreen;
+                border: 2px solid;
+                border: none;
+            }
+            input:focus
+            {
+                background: coral;
+                outline: none;
+                /* border: 2px solid; */
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <input type="text">
+
+        <a href="">Home</a>
+        <br>
+        <a href="" class="hoc">House Of Cards</a>
+        <div class="main">
+            <div class="x">
+                <p>Para 1</p>
+                <p>Para 2</p>
+                <p>Para 3</p>
+                <p>Para 4</p>
+            </div>
+
+
+            <div class="x">
+                <p>Para 1</p>
+                <p>Para 2</p>
+                <p>Para 3</p>
+                <p>Para 4</p>
+            </div>
+
+
+            <div class="x">
+                <p>Para 1</p>
+                <p>Para 2</p>
+                <p>Para 3</p>
+                <p>Para 4</p>
+            </div>
+        </div>
+    </body>
+</html>
