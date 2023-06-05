@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover-Nav</title>
+    <style>
+        *{box-sizing: border-box;}
+        .nav
+        {
+            height: 50px;
+            /* background: coral; */
+            text-align: center;
+            padding: 25px 0;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Candara;
+        }
+        .effect
+        {
+            height: 5px;
+            width: 0px;
+            background: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 1s;
+        }
+        li
+        {
+            list-style: none;
+            display: inline;
+            position: relative;
+            background: lightblue;
+        }
+        li:hover .effect
+        {
+            width: 100%;
+        }
+        /* p
+        {
+            background: gray;
+            display: inline;
+            display: block;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin-top: 20px;
+            padding: 25px;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <p>Hello</p> -->
+    <div class="nav">
+        <li>
+            About
+            <div class="effect"></div>
+        </li>
+    </div>
+</body>
+</html>
