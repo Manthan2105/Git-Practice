@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{box-sizing: border-box;}
+            .main
+            {
+                height: 250px;
+                width: 300px;
+                border: 3px solid white;
+                border-radius: 5px;
+                position: relative;
+            }
+            .content
+            {
+                border: 3px solid white;
+                height: 155px;
+                width: 170px;
+                /* line-height: 155px; */
+                position: absolute;
+                top: 15px;
+                left: 60px;
+                text-align: center;
+                color: whitesmoke;
+                /* padding: 10px auto; */
+                z-index: 2;
+            }
+            .img
+            {
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="content">
+                <h3>Quote</h3>
+                <p>The greatest glory in living lies not in never falling, but
+                    in
+                    rising every time we fall. -Nelson Mandela
+                </p>
+            </div>
+
+            <div class="img">
+                <img
+                    src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000"
+                    height="100%" width="100%" alt>
+            </div>
+        </div>
+    </body>
+</html>
