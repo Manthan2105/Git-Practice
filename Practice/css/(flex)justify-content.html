@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+
+    <!-- 
+
+        Justify content makes the items of flex horizontally center and align-items makes items of flex vertically center.
+
+
+     -->
+    <style>
+        .main
+        {
+            height: 200px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .main div
+        {
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            /* align-items: center; */
+            line-height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Justify Content</h1>
+    <div class="main">
+        <div style="background-color: darkblue;">A</div>
+        <div style="background-color: greenyellow;">B</div>
+        <div style="background-color: dodgerblue;">C</div>
+    </div>
+</body>
+</html>

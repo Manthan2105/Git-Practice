@@ -4,52 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Border-transform</title>
+    <title>Document</title>
     <style>
-        *{box-sizing: border-box;}
         .main
         {
-            height: 200px;
+            height: 300px;
             width: 200px;
             background: gray;
-            /* border-width: 100px; */
-            border-style: solid;
-            border-image: linear-gradient(dodgerblue,powderblue);
             margin: 50px auto;
             position: relative;
-            animation: rotate 5s infinite;
+            overflow: hidden;
         }
-        /* .main:hover
+        .child1
         {
-            transform: rotate(360deg);
-        } */
-        .content
-        {
-            height: 180px;
-            width: 180px;
-            background: black;
+            height: 300px;
+            width: 200px;
+            background: linear-gradient(red,blue,green,pink,yellow,lightseagreen,dodgerblue,powderblue);
             position: absolute;
-            top: 10px;
-            left: 10px;
-            animation: no-rotate 5s infinite;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-256deg);
+            transition: 1s;
+            animation: effect 2s infinite;
+        }
+        .child2
+        {
+            height: 280px;
+            width: 180px;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
         }
 
-        @keyframes rotate
+        .main:hover .child1
         {
-            from{transform: rotate(0deg);}
-            to{transform: rotate(360deg);}
+            transform: translate(-50%,-50%)
+            rotate(250deg);
         }
-        @keyframes no-rotate
+
+        @keyframes effect
         {
-            from{transform: rotate(360deg);}
-            to{transform: rotate(0deg);}
+            from{transform: translate(-50%,-50%) rotate(-256deg);}
+            to{transform: translate(-50%,-50%) rotate(256deg);}
+            
         }
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="content">
-        </div>
+        <div class="child1"></div>
+        <div class="child2"></div>
     </div>
 </body>
 </html>

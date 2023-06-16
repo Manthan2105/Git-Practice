@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .x{
+            height: 80px;
+            width: 200px;
+            border: 2px solid;
+            /* padding: 50px auto; */
+            text-align: center;
+            line-height: 80px;
+            background: coral;
+            margin: 100px auto;
+            outline: 5px solid transparent;
+            outline-offset: 0px;
+            transition: .21s;
+            position: relative;
+        }
+        .x:hover{
+            outline: 5px solid darkblue;
+            outline-offset: 5px;
+        }
+
+        .y{
+            height: 80px;
+            width: 200px;
+            border: 2px solid;
+            /* padding: 50px auto; */
+            text-align: center;
+            line-height: 80px;
+            background: coral;
+            margin: 100px auto;
+            outline: 5px solid transparent;
+            outline-offset: 0px;
+            transition: .21s;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .y:hover
+        {
+            outline: 5px solid darkblue;
+            outline-offset: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            Shop Now
+        </div>
+    </div>
+</body>
+</html>

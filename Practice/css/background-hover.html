@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background-Hover</title>
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        body
+        {
+            background: #36454F;
+        }
+
+        .banner{
+            height: 300px;
+            width: 500px;
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+            background-size: cover;
+            background-position: -20px 0;
+            /* background-position-y: -20px; */
+            display: flex;
+            justify-content: center;  /* Horizontally centers*/
+            align-items: center; /* Vertically centers*/
+            transition: .31s;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Candara;
+            letter-spacing: 5px;
+            position: relative;
+            border: 20px solid rgba(255,255,255,.25);
+            background-origin: border-box;   /* Image starts from the border. */
+            margin: 50px auto;
+        }
+        .banner:hover 
+        {
+            background-position: 0px 0;
+        }
+        .effect 
+        {
+            height: 200px;
+            width: 400px;
+            background: transparent;
+            /* margin: auto; */
+            /* line-height: 200px; */
+            border: 5px solid #fff;
+            padding: 120px 0 0 180px;
+            /* display: none; */
+            opacity: 0;
+            /* visibility: hidden; */
+            transition: .31s;
+            margin-left: -20px;
+
+           
+        }
+
+        .banner:hover .effect 
+        {
+            /* display: block; */
+            opacity: 1;
+            margin-left: 0px;
+            /* visibility: visible; */
+        }
+
+        p 
+        {
+            position: absolute;
+            top:40%;
+            left:55%;
+            margin: 0;
+        }
+        span
+        {
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="banner">
+            <p><span>F</span>all Ahead</p>
+            <div class="effect">
+                New Arrivals
+            </div>
+        </div>
+    </body>
+</html>

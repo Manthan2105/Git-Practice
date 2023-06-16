@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BG-Clip</title>
+        <style>
+            *{box-sizing: border-box;}
+
+            .main
+            {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .ex1
+            {
+                
+                height: 300px;
+                width: 400px;
+                margin: 100px auto;
+                border: 20px dotted red;
+                /* margin: 25px; */
+                padding: 25px;
+                background: yellow;
+                color: red;
+                font-family: Candara;
+                background-clip: border-box;
+                /* background-clip: content-box; */
+            }
+
+            .ex2
+            {
+                height: 300px;
+                width: 400px;
+                margin: 100px auto;
+                border: 20px dotted red;
+                /* margin: 25px; */
+                padding: 25px;
+                background: yellow;
+                color: red;
+                font-family: Candara;
+                background-clip: padding-box;
+                
+            }
+
+            .ex3
+            {
+                height: 300px;
+                width: 400px;
+                margin: 100px auto;
+                border: 20px dotted red;
+                /* margin: 25px; */
+                padding: 25px;
+                background: yellow;
+                color: red;
+                font-family: Candara;
+                background-clip: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="ex1">
+                <h4>This is border-box</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                corrupti quis asperiores nesciunt consectetur earum sed dolorum vel
+                nihil tempore maxime architecto, alias ipsa quas provident. Illum
+                voluptatem molestias cum?
+            </div>
+    
+            <div class="ex2">
+                <h4>This is padding-box</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                corrupti quis asperiores nesciunt consectetur earum sed dolorum vel
+                nihil tempore maxime architecto, alias ipsa quas provident. Illum
+                voluptatem molestias cum?
+            </div>
+    
+            <div class="ex3">
+                <h4>This is content-box</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                corrupti quis asperiores nesciunt consectetur earum sed dolorum vel
+                nihil tempore maxime architecto, alias ipsa quas provident. Illum
+                voluptatem molestias cum?
+            </div>
+        </div>
+        
+    </body>
+</html>

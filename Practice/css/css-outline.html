@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="Practice\img2.jpeg" type="image/x-icon">
+    <style>
+
+        /* CSS OUTLINE PROPERTY
+        An outline is a line drawn outside the element's border.
+
+        OUTLINE OFFSET:
+
+        Outline offset property adds space between the border and outline of that element. The space is visible.
+
+        */
+        *{
+            box-sizing: border-box;
+        }
+        .x{
+            height: 80px;
+            width: 200px;
+            background: aqua;
+            /* border: 2px solid black; */
+            margin: 50px auto;
+            outline:  solid green;
+            outline-width: thick;
+            outline-width: medium;
+            outline-color: aqua;
+            outline-offset: 0px;
+            transition: .21s;
+            padding: 20px 20px;
+        }
+        .x:hover
+        {
+            outline-offset: 7px;
+        }
+
+        @media(max-width:500px)
+        {
+            .x{height: 50px;width: 150px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        Hello world
+    </div>
+</body>
+</html>
